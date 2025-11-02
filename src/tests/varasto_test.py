@@ -55,7 +55,7 @@ class TestVarasto(unittest.TestCase):
     def test_lisaa_varastoon_maara_on_pienempi_tai_yhtasuuri_kuin_paljonko_mahtuu(self):
         self.varasto.lisaa_varastoon(5)
 
-        self.assertAlmostEqual(self.varasto.saldo, 14)
+        self.assertAlmostEqual(self.varasto.saldo, 5)
 
 
     def test_lisaa_varastoon_maara_on_suurempi_kuin_paljonko_mahtuu(self):
