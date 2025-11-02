@@ -1,2 +1,2 @@
 # ohtuvarasto
-![https://github.com/panul639/ohtuvarasto/actions/workflows/main.yml/badge.svg]
+![badge](https://github.com/panul639/ohtuvarasto/actions/workflows/main.yml/badge.svg)
