@@ -75,6 +75,4 @@ class TestVarasto(unittest.TestCase):
     def test_olio_tekstiksi(self):
         self.assertAlmostEqual(
             str(self.varasto),
-            f"saldo = {self.varasto.saldo}, vielä tilaa {
-                self.varasto.paljonko_mahtuu()}",
-        )
+            f"saldo = {self.varasto.saldo}, vielä tilaa {self.varasto.paljonko_mahtuu()}",)
