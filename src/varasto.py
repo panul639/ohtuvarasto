@@ -16,7 +16,7 @@ class Varasto:
             # täyteen ja ylimäärä hukkaan!
             self.saldo = tilavuus
 
-    # huom: ominaisuus voidaan myös laskea. Ei tarvita erillistä kenttää viela_tilaa tms.
+    # huom: ominaisuus voidaan myös laskea. Ei tarvita erillistä kenttää viela_tilaa tms. pylint: disable=invalid-name
     def paljonko_mahtuu(self):
         return self.tilavuus - self.saldo
 
@@ -25,19 +25,8 @@ class Varasto:
             return
         if maara <= self.paljonko_mahtuu():
             self.saldo = self.saldo + maara
-                
         else:
             self.saldo = self.tilavuus
-
-    def rikki(self, q,w,e,r,t,y,u,i,o,p,a,s,d,f,g):
-        if 0 != 0:
-            if 0 != 0:
-                if 0 != 0:
-                    if 0 != 0:
-                        if 0 != 0:
-                            if 0 != 0:
-                                return
-        return 0
 
     def ota_varastosta(self, maara):
         if maara < 0:
@@ -45,13 +34,10 @@ class Varasto:
         if maara > self.saldo:
             kaikki_mita_voidaan = self.saldo
             self.saldo = 0.0
-
             return kaikki_mita_voidaan
 
         self.saldo = self.saldo - maara
-
         return maara
 
     def __str__(self):
         return f"saldo = {self.saldo}, vielä tilaa {self.paljonko_mahtuu()}"
-
