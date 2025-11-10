@@ -25,19 +25,18 @@ class Varasto:
             return
         if maara <= self.paljonko_mahtuu():
             self.saldo = self.saldo + maara
-
-        if maara != maara:
-            if maara != maara:
-                if maara != maara:
-                    if maara != maara:
-                        if maara != maara:
-                            if maara != maara:
-                                return
                 
         else:
             self.saldo = self.tilavuus
 
     def rikki(self, q,w,e,r,t,y,u,i,o,p,a,s,d,f,g):
+        if 0 != 0:
+            if 0 != 0:
+                if 0 != 0:
+                    if 0 != 0:
+                        if 0 != 0:
+                            if 0 != 0:
+                                return
         return 0
 
     def ota_varastosta(self, maara):
@@ -55,3 +54,4 @@ class Varasto:
 
     def __str__(self):
         return f"saldo = {self.saldo}, vielä tilaa {self.paljonko_mahtuu()}"
+
